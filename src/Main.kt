@@ -8,7 +8,8 @@ fun main() {
     println("Warm-up: accessing lists...")
     dummySortedList.size
     dummyUnSortedList.size
-
+    println("Lists are ready!")
+    println("-----------------")
     runWithTimer("found with normal search in") {
         println("item index = " + NormalSearch().find(dummySortedList, dummyItem))
     }
