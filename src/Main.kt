@@ -3,6 +3,7 @@ import DummyDataHolder.dummyUnSortedList
 import searches.BinarySearch
 import searches.NormalSearch
 import sort.NormalSort
+import sort.QuickSort
 
 fun main() {
     println("Warm-up: accessing lists...")
@@ -18,5 +19,8 @@ fun main() {
     }
     runWithTimer("Array normally sorted in") {
         println(NormalSort().sort(dummyUnSortedList))
+    }
+    runWithTimer("Array quick sorted in") {
+        println(QuickSort().sort(dummyUnSortedList))
     }
 }
