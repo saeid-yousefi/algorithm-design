@@ -16,6 +16,14 @@ object DummyDataHolder {
         }
         list
     }
+
+    val dummyHashMap by lazy {
+        val hashmap: HashMap<Int, Int> = hashMapOf()
+        repeat(10_000_000) {
+            hashmap[it] = it
+        }
+        hashmap
+    }
 }
 
 const val dummyItem = 9_000_000
