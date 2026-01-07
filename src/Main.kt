@@ -25,6 +25,6 @@ fun main() {
         println(QuickSort().sort(dummyUnSortedList))
     }
     runWithTimer("Array merge sorted in") {
-        println(MergeSort().sort(listOf(4, 6, 2, 7, 1, 10)))
+        println(MergeSort().sort(dummyUnSortedList))
     }
 }
