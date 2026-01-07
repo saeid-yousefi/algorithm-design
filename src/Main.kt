@@ -2,6 +2,7 @@ import DummyDataHolder.dummySortedList
 import DummyDataHolder.dummyUnSortedList
 import searches.BinarySearch
 import searches.NormalSearch
+import sort.MergeSort
 import sort.NormalSort
 import sort.QuickSort
 
@@ -22,5 +23,8 @@ fun main() {
     }
     runWithTimer("Array quick sorted in") {
         println(QuickSort().sort(dummyUnSortedList))
+    }
+    runWithTimer("Array merge sorted in") {
+        println(MergeSort().sort(listOf(4, 6, 2, 7, 1, 10)))
     }
 }
